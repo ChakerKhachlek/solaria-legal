@@ -48,6 +48,7 @@ tr:last-child td { border-bottom: 0 }
 <li>On Android you are signed in with <strong>Google Play Games</strong> so your player follows you to another phone; we receive a Play Games player id, never your email or password.</li>
 <li><strong>Party chat</strong> reaches only the players in your co-op room; we do not store it.</li>
 <li><strong>Friends</strong>: your friends list, friend requests, your online status (what you are doing in the game, and a room code your friends can join) and room invites are handled by <strong>Unity Friends</strong> and shown only to your friends.</li>
+<li><strong>Anonymous play data (optional, off until you say yes)</strong>: if you agree, the game sends anonymous play statistics (which dungeons you play, how runs go) to <strong>Unity Analytics</strong>. You can turn it off anytime in Settings &rsaquo; Share play data, which also asks Unity to delete what was sent.</li>
 <li><strong>No ads, no advertising id, no sale of data.</strong></li>
 <li>Questions or deletion requests: <span class="mail">solaria.guardians.support@gmail.com</span></li>
 </ul>
@@ -70,6 +71,7 @@ tr:last-child td { border-bottom: 0 }
 <tr><td>Display name</td><td>The name you choose in the game, with a short tag that keeps it unique</td><td>Unity Technologies (player names)</td><td>So other players in your room see your name</td></tr>
 <tr><td>Online co-op rooms</td><td>Your IP address (to route the connection) and game messages; other players in your room see your display name, profile icon, Guardian, its level, pet, wings and equipment</td><td>Unity Technologies (Lobby, Relay)</td><td>To play together</td></tr>
 <tr><td>News notices</td><td>The anonymous player id, the game version and the device platform, sent when the game asks for the latest notices</td><td>Unity Technologies (Remote Config)</td><td>To show news and rewards without an app update</td></tr>
+<tr><td>Play statistics (only if you say Yes; off by default)</td><td>Anonymous game events: the game version, the dungeons you start and how each run ends (victory / defeat / left, stars, time, deaths, kills, rooms), Guardian levels, Guardian / pet / wings chosen, co-op rooms created or joined, the number of friends when you accept one, gifts claimed, gold shop and pack purchases (product ids, no payment data). Unity adds an anonymous analytics user id, a session id, the device model, operating system, country (from the IP address, which is not stored) and the app version. Never your name, display name, friends, chat or contacts</td><td>Unity Technologies (Unity Analytics)</td><td>To see which dungeons are too hard or too long and improve the game (your consent)</td></tr>
 <tr><td>Purchases (supporter packs)</td><td>Payment is handled entirely by Google Play: we never see your card or bank details. The game receives a purchase confirmation (product and order). Unity In-App Purchasing processes purchase data, purchase history, device and app diagnostics, crash logs, device identifiers and, temporarily, approximate location and email address, to complete and check purchases</td><td>Google (Google Play Billing), Unity Technologies (Unity IAP)</td><td>To sell and deliver the packs, restore them on a new installation, and prevent fraud</td></tr>
 </tbody></table></div>
 <p>Unity's privacy policy: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">unity.com/legal/game-player-and-app-user-privacy-policy</a>. Unity IAP privacy details: <a href="https://docs.unity.com/en-us/iap/privacy-and-consent/overview">docs.unity.com/en-us/iap/privacy-and-consent/overview</a>. Google's privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
@@ -85,6 +87,7 @@ tr:last-child td { border-bottom: 0 }
 <h2>Legal bases (GDPR)</h2>
 <ul>
 <li><strong>Performance of the contract</strong> (Article 6(1)(b) GDPR): running the online features you use and delivering the packs you buy.</li>
+<li><strong>Consent</strong> (Article 6(1)(a)): the anonymous play statistics, only after you choose "Yes, share". You can withdraw it at any time in Settings &rsaquo; Share play data; withdrawing stops the collection and asks Unity to delete the statistics already sent.</li>
 <li><strong>Legitimate interest</strong> (Article 6(1)(f)): keeping the online services secure, preventing purchase fraud and fixing crashes.</li>
 <li><strong>Legal obligations</strong> (Article 6(1)(c)): keeping purchase records as tax and consumer law require (held by Google Play).</li>
 </ul>
@@ -98,6 +101,7 @@ tr:last-child td { border-bottom: 0 }
 <li>The player id, its Google Play Games link and display name at Unity: until you delete your account (Settings &rsaquo; Delete account) or ask us to.</li>
 <li>Friends list, requests, blocks and status at Unity Friends: until you remove them, delete your account or ask us to; invites are not kept by the game after 5 minutes.</li>
 <li>Cloud save (players signed in with Google): until you delete your account. Settings &rsaquo; Delete account first deletes your saved progress from Unity Cloud Save, then your Unity player; the progress on your phone stays until you uninstall the game.</li>
+<li>Play statistics (only with your consent): raw events are kept by Unity for about 13 months and then deleted; the summary figures and the anonymous analytics profile stay until you turn Share play data off (which requests their deletion) or ask us to delete them.</li>
 <li>Purchase records: kept by Google Play for as long as the law requires.</li>
 <li>Support emails: as long as needed to answer you, and at most 2 years.</li>
 </ul>
