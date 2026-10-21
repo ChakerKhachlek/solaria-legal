@@ -45,7 +45,9 @@ tr:last-child td { border-bottom: 0 }
 <ul>
 <li>Your game progress is saved <strong>on your device</strong>.</li>
 <li>Online features (co-op rooms, news notices, purchases) use <strong>Unity Gaming Services</strong> and <strong>Google Play</strong>. They work with an anonymous player id, not your name or contact details.</li>
-<li><strong>No ads, no advertising id, no sale of data, no chat.</strong></li>
+<li>On Android you are signed in with <strong>Google Play Games</strong> so your player follows you to another phone; we receive a Play Games player id, never your email or password.</li>
+<li><strong>Party chat</strong> reaches only the players in your co-op room; we do not store it.</li>
+<li><strong>No ads, no advertising id, no sale of data.</strong></li>
 <li>Questions or deletion requests: <span class="mail">solaria.guardians.support@gmail.com</span></li>
 </ul>
 </section>
@@ -60,7 +62,8 @@ tr:last-child td { border-bottom: 0 }
 <div class="table"><table>
 <thead><tr><th>Feature</th><th>What is used</th><th>Who processes it</th><th>Why</th></tr></thead>
 <tbody>
-<tr><td>Anonymous sign-in (at start-up and for co-op)</td><td>An anonymous player id created for your installation</td><td>Unity Technologies (Unity Authentication)</td><td>To use the online features without an account</td></tr>
+<tr><td>Sign-in (at start-up)</td><td>On Android: your Google Play Games player id and a one-time sign-in code from Google, linked to a Unity player id. Without Google Play Games: an anonymous player id for your installation</td><td>Google (Google Play Games Services), Unity Technologies (Unity Authentication)</td><td>To keep the same player on any phone and to use the online features</td></tr>
+<tr><td>Party chat (co-op rooms only)</td><td>The messages you send and your display name, passed to the players in your room while you play. Messages are filtered for blocked words, rate-limited, and are not stored by us. You can mute a player and report a message (the report opens an email to us that you choose to send)</td><td>Unity Technologies (Relay)</td><td>To talk with your party</td></tr>
 <tr><td>Display name</td><td>The name you choose in the game, with a short tag that keeps it unique</td><td>Unity Technologies (player names)</td><td>So other players in your room see your name</td></tr>
 <tr><td>Online co-op rooms</td><td>Your IP address (to route the connection) and game messages; other players in your room see your display name, profile icon, Guardian, its level, pet, wings and equipment</td><td>Unity Technologies (Lobby, Relay)</td><td>To play together</td></tr>
 <tr><td>News notices</td><td>The anonymous player id, the game version and the device platform, sent when the game asks for the latest notices</td><td>Unity Technologies (Remote Config)</td><td>To show news and rewards without an app update</td></tr>
@@ -73,7 +76,7 @@ tr:last-child td { border-bottom: 0 }
 <li>No advertising and no advertising id.</li>
 <li>No sale or rental of personal data.</li>
 <li>No access to your contacts, photos, files, microphone, camera or precise location.</li>
-<li>No chat: rooms are joined only with a code you share yourself.</li>
+<li>No public chat: rooms are joined only with a code you share yourself, and chat reaches only that room.</li>
 </ul>
 
 <h2>Legal bases (GDPR)</h2>
@@ -89,7 +92,7 @@ tr:last-child td { border-bottom: 0 }
 <h2>How long data is kept</h2>
 <ul>
 <li>Data on your device: until you uninstall the game or clear its data.</li>
-<li>The anonymous player id and display name at Unity: until you ask us to delete them.</li>
+<li>The player id, its Google Play Games link and display name at Unity: until you delete your account (Settings &rsaquo; Delete account) or ask us to.</li>
 <li>Purchase records: kept by Google Play for as long as the law requires.</li>
 <li>Support emails: as long as needed to answer you, and at most 2 years.</li>
 </ul>
