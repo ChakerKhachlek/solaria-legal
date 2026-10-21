@@ -43,7 +43,7 @@ tr:last-child td { border-bottom: 0 }
 <section class="summary">
 <h2>In short</h2>
 <ul>
-<li>Your game progress is saved <strong>on your device</strong>.</li>
+<li>Your game progress is saved <strong>on your device</strong>. When you sign in with Google, a copy is also kept in <strong>Unity Cloud Save</strong> so it follows your Google account to another phone; it is deleted with your account.</li>
 <li>Online features (co-op rooms, news notices, purchases) use <strong>Unity Gaming Services</strong> and <strong>Google Play</strong>. They work with an anonymous player id, not your name or contact details.</li>
 <li>On Android you are signed in with <strong>Google Play Games</strong> so your player follows you to another phone; we receive a Play Games player id, never your email or password.</li>
 <li><strong>Party chat</strong> reaches only the players in your co-op room; we do not store it.</li>
@@ -56,13 +56,14 @@ tr:last-child td { border-bottom: 0 }
 <p>The game is developed and published by <strong>Chaker KHACHLEK</strong>, an individual developer based in <strong>France</strong>, who is the data controller for the data described here. Contact: <span class="mail">solaria.guardians.support@gmail.com</span>.</p>
 
 <h2>Data stored on your device</h2>
-<p>Your progress (Guardians, levels, items, gold, chests, pets, wings and other cosmetics, your display name and profile icon, read notices, settings) is saved in a file on your device. It stays there and is not sent to us. Uninstalling the game or clearing its data deletes it.</p>
+<p>Your progress (Guardians, levels, items, gold, chests, pets, wings and other cosmetics, your display name and profile icon, read notices, settings) is saved in a file on your device. Uninstalling the game or clearing its data deletes it. If you play as a guest it stays only there. If you sign in with Google, the same file and a short summary of it (selected Guardian, level, play time, dungeons cleared, gold, display name) are also stored in Unity Cloud Save under your Unity player id.</p>
 
 <h2>Data used by the online features</h2>
 <div class="table"><table>
 <thead><tr><th>Feature</th><th>What is used</th><th>Who processes it</th><th>Why</th></tr></thead>
 <tbody>
 <tr><td>Sign-in (at start-up)</td><td>On Android: your Google Play Games player id and a one-time sign-in code from Google, linked to a Unity player id. Without Google Play Games: an anonymous player id for your installation</td><td>Google (Google Play Games Services), Unity Technologies (Unity Authentication)</td><td>To keep the same player on any phone and to use the online features</td></tr>
+<tr><td>Cloud save (Google sign-in only)</td><td>Your progress file and its short summary, stored under your Unity player id and updated while you play. Guests are never uploaded</td><td>Unity Technologies (Cloud Save)</td><td>So your progress follows your Google account to any phone</td></tr>
 <tr><td>Party chat (co-op rooms only)</td><td>The messages you send and your display name, passed to the players in your room while you play. Messages are filtered for blocked words, rate-limited, and are not stored by us. You can mute a player and report a message (the report opens an email to us that you choose to send)</td><td>Unity Technologies (Relay)</td><td>To talk with your party</td></tr>
 <tr><td>Display name</td><td>The name you choose in the game, with a short tag that keeps it unique</td><td>Unity Technologies (player names)</td><td>So other players in your room see your name</td></tr>
 <tr><td>Online co-op rooms</td><td>Your IP address (to route the connection) and game messages; other players in your room see your display name, profile icon, Guardian, its level, pet, wings and equipment</td><td>Unity Technologies (Lobby, Relay)</td><td>To play together</td></tr>
@@ -93,6 +94,7 @@ tr:last-child td { border-bottom: 0 }
 <ul>
 <li>Data on your device: until you uninstall the game or clear its data.</li>
 <li>The player id, its Google Play Games link and display name at Unity: until you delete your account (Settings &rsaquo; Delete account) or ask us to.</li>
+<li>Cloud save (players signed in with Google): until you delete your account. Settings &rsaquo; Delete account first deletes your saved progress from Unity Cloud Save, then your Unity player; the progress on your phone stays until you uninstall the game.</li>
 <li>Purchase records: kept by Google Play for as long as the law requires.</li>
 <li>Support emails: as long as needed to answer you, and at most 2 years.</li>
 </ul>
